@@ -1,4 +1,4 @@
-# 🔮 Previsão de Salários com Machine Learning
+# 🔮 Previsão Salarial com Machine Learning
 
 Este projeto utiliza Machine Learning para prever o salário base médio de uma vaga de emprego no Brasil, considerando o nome da vaga, a empresa e a senioridade.
 
