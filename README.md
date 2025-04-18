@@ -47,4 +47,4 @@ def buscar_salario_api(vaga, empresa=""):
     except:
         return None
     
-print(buscar_salario_api("Analista de Dados"))
+print(buscar_salario_api("Analista de Dados Pleno"))
