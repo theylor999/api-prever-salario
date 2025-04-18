@@ -19,7 +19,9 @@ Este projeto utiliza Machine Learning para prever o salário base médio de uma 
 4. **API com FastAPI**  
    Criei uma API usando **FastAPI** para servir o modelo em produção. A API recebe os dados de entrada via `POST` e retorna a previsão salarial.
 
-5. **Deploy**  
+      🔸 **Importante:** a **senioridade deve ser incluída no nome da vaga** (ex: `"Analista de Dados Pleno"`), pois a API faz o **processamento automático** e separa internamente a senioridade do nome do cargo.
+
+6. **Deploy**  
    A API foi publicada via [Render](https://render.com) e o site demo com front-end foi implementado em [https://prever-salarios.vercel.app](https://prever-salarios.vercel.app).
 
 ---
