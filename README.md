@@ -11,7 +11,7 @@ Este projeto utiliza Machine Learning para prever o salário base médio de uma 
    Os dados foram tratados com Pandas para padronizar nomes de cargos e empresas, extrair informações de **senioridade** (como Júnior, Pleno, Sênior) e remover inconsistências.
 
 3. **Treinamento do Modelo**  
-   Com os dados limpos, treinei um modelo de **Random Forest Regressor** usando Scikit-Learn para prever o salário com base nas variáveis:
+   Com os dados limpos, treinei modelos de Ridge Regression específicos para cada nível de senioridade, além de um modelo geral para casos em que a senioridade não é identificada. Utilizei o Scikit-Learn para prever o salário com base nas seguintes variáveis:
    - Nome da vaga
    - Nome da empresa
    - Senioridade
