@@ -5,7 +5,7 @@ Este projeto utiliza Machine Learning para prever o salário base médio de uma 
 ## 📊 Como foi feito
 
 1. **Coleta de Dados**  
-   Realizei web scraping e consumo de APIs para coletar os salários que funcionários informaram voluntariamente no site Glassdoor. Foram obtidos dados de mais de **850 empresas** em diferentes regiões do Brasil.
+   Realizei web scraping e consumo de APIs para coletar os salários que funcionários informaram voluntariamente no site Glassdoor. Foram obtidos dados de mais de **74 mil cargos de 3382 empresas** em diferentes regiões do Brasil.
 
 2. **Limpeza e Processamento**  
    Os dados foram tratados com Pandas para padronizar nomes de cargos e empresas, extrair informações de **senioridade** (como Júnior, Pleno, Sênior) e remover inconsistências.
