@@ -5,18 +5,19 @@ Este projeto utiliza Machine Learning para prever o salário base médio de uma 
 ## 📊 Como foi feito
 
 1. **Coleta de Dados**  
-   Realizei web scraping e consumo de APIs para coletar os salários que funcionários informaram voluntariamente no site Glassdoor. Foram obtidos dados de mais de **74 mil cargos de 3382 empresas** em diferentes regiões do Brasil.
+   Realizei web scraping e consumo de APIs para coletar os salários que funcionários informaram voluntariamente no site Glassdoor.
+   Foram obtidos dados de mais de **74 mil cargos de 3382 empresas** em diferentes regiões do Brasil.
 
-2. **Limpeza e Processamento**  
-   Os dados foram tratados com Pandas para padronizar nomes de cargos e empresas, extrair informações de **senioridade** (como Júnior, Pleno, Sênior) e remover inconsistências.
+3. **Limpeza e Processamento**  
+   Os dados foram tratados com Pandas para padronizar nomes de cargos e empresas, extrair informações de **senioridade** (como Júnior, Pleno, Sênior, etc.) e remover inconsistências.
 
-3. **Treinamento do Modelo**  
+4. **Treinamento do Modelo**  
    Com os dados limpos, treinei modelos de Ridge Regression específicos para cada nível de senioridade, além de um modelo geral para casos em que a senioridade não é identificada. Utilizei o Scikit-Learn para prever o salário com base nas seguintes variáveis:
    - Nome da vaga
    - Nome da empresa
    - Senioridade
 
-4. **API com FastAPI**  
+5. **API com FastAPI**  
    Criei uma API usando **FastAPI** para servir o modelo em produção. A API recebe os dados de entrada via `POST` e retorna a previsão salarial.
 
       🔸 **Importante:** a **senioridade deve ser incluída no nome da vaga** (ex: `"Analista de Dados Pleno"`), pois a API faz o **processamento automático** e separa internamente a senioridade do nome do cargo.
